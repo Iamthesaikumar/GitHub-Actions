@@ -28,6 +28,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
+          secret-ids:arn: aws:secretsmanager:us-east-2:674113923535:secret:sai-packers-movers/app-8WB3Rq
           role-to-assume: arn:aws:iam::674113923535:role/github_ecr_role
           aws-region: us-east-2
 
